@@ -29,21 +29,33 @@ than `1024x1024` precincts of `512x512` or `256x256` are recommended.
 
 ## How to use
 
+Run container in foreground specifying a port and a volume for the JPEG2000 images.
+
 ```
 docker run -it --rm -p 8090:8090 -v $(pwd)/jp2/:/root/esajpip/images josejuansanchez/esajpip:1.0
 ```
+
+Run container in foreground specifying a port, a volume for the JPEG2000 images and a volume for the log files.
 
 ```
 docker run -it --rm -p 8090:8090 -v $(pwd)/jp2/:/root/esajpip/images -v $(pwd)/log:/root/esajpip/log josejuansanchez/esajpip:1.0
 ```
 
+Run container in background specifying a port and a volume for the JPEG2000 images.
+
 ```
 docker run -d --rm -p 8090:8090 -v $(pwd)/jp2/:/root/esajpip/images josejuansanchez/esajpip:1.0
 ```
 
+Run container in background specifying a port, a volume for the JPEG2000 images and a volume for the log files.
+
 ```
 docker run -d --rm -p 8090:8090 -v $(pwd)/jp2/:/root/esajpip/images -v $(pwd)/log:/root/esajpip/log josejuansanchez/esajpip:1.0
 ```
+
+## Docker Hub
+
+https://hub.docker.com/r/josejuansanchez/esajpip
 
 
 [1]: https://github.com/Helioviewer-Project/esajpip-SWHV
