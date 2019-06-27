@@ -1,6 +1,6 @@
-# docker-esajpip-swhv
+# docker-esajpip
 
-This repository contains a Dockerfile for building a JPIP Server image containing the [SWHV esajpip][1] software.
+This repository contains a Dockerfile for building a JPIP Server image containing the [esajpip][1] software used in the [JHelioviewer project][3].
 
 This Docker image is also available on Docker Hub [josejuansanchez/esajpip:1.0][2].
 
@@ -60,3 +60,4 @@ https://hub.docker.com/r/josejuansanchez/esajpip
 
 [1]: https://github.com/Helioviewer-Project/esajpip-SWHV
 [2]: https://hub.docker.com/r/josejuansanchez/esajpip
+[3]: https://www.jhelioviewer.org
